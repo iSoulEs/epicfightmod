@@ -221,7 +221,7 @@ public class Skills {
 				.addProperty(AttackPhaseProperty.STUN_TYPE, StunType.HOLD)
 				.newPropertyLine()
 				.addProperty(AttackPhaseProperty.MAX_STRIKES, ValueCorrector.setter(1))
-				.addProperty(AttackPhaseProperty.EXTRA_DAMAGE, ExtraDamageType.get(ExtraDamageType.PERCENT_OF_TARGET_LOST_HEALTH, 0.5F))
+				.addProperty(AttackPhaseProperty.EXTRA_DAMAGE, ExtraDamageType.get(ExtraDamageType.PERCENT_OF_TARGET_LOST_HEALTH, 0.03F))
 				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(50.0F))
 				.addProperty(AttackPhaseProperty.STUN_TYPE, StunType.LONG)
 				.registerPropertiesToAnimation());
