@@ -137,7 +137,7 @@ public class Skills {
 				.newPropertyLine()
 				.addProperty(AttackPhaseProperty.MAX_STRIKES, ValueCorrector.adder(1))
 				.addProperty(AttackPhaseProperty.DAMAGE, ValueCorrector.multiplier(2.0F))
-				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(20.0F))
+				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(0.0F))
 				.addProperty(AttackPhaseProperty.IMPACT, ValueCorrector.multiplier(1.6F))
 				.addProperty(AttackPhaseProperty.STUN_TYPE, StunType.LONG)
 				.registerPropertiesToAnimation());
@@ -152,7 +152,7 @@ public class Skills {
 				.newPropertyLine()
 				.addProperty(AttackPhaseProperty.MAX_STRIKES, ValueCorrector.setter(1))
 				.addProperty(AttackPhaseProperty.DAMAGE, ValueCorrector.multiplier(2.5F))
-				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(20.0F))
+				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(0.0F))
 				.addProperty(AttackPhaseProperty.IMPACT, ValueCorrector.multiplier(2.0F))
 				.addProperty(AttackPhaseProperty.STUN_TYPE, StunType.LONG)
 				.registerPropertiesToAnimation());
@@ -166,7 +166,7 @@ public class Skills {
 		
 		HEARTPIERCER = registerSkill(new SimpleSpecialAttackSkill(SimpleSpecialAttackSkill.createBuilder(new ResourceLocation(EpicFightMod.MODID, "heartpiercer")).setConsumption(40.0F).setAnimations(Animations.SPEAR_THRUST))
 				.newPropertyLine()
-				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(10.0F))
+				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(0.0F))
 				.addProperty(AttackPhaseProperty.STUN_TYPE, StunType.HOLD)
 				.registerPropertiesToAnimation());
 		
@@ -178,7 +178,7 @@ public class Skills {
 		FATAL_DRAW = registerSkill(new FatalDrawSkill(SpecialAttackSkill.createBuilder(new ResourceLocation(EpicFightMod.MODID, "fatal_draw")).setConsumption(30.0F))
 				.newPropertyLine()
 				.addProperty(AttackPhaseProperty.DAMAGE, ValueCorrector.multiplier(2.0F))
-				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(50.0F))
+				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(0.0F))
 				.addProperty(AttackPhaseProperty.MAX_STRIKES, ValueCorrector.adder(6))
 				.addProperty(AttackPhaseProperty.STUN_TYPE, StunType.HOLD)
 				.registerPropertiesToAnimation());
@@ -199,7 +199,7 @@ public class Skills {
 				.addProperty(AttackPhaseProperty.HIT_SOUND, EpicFightSounds.BLUNT_HIT)
 				.addProperty(AttackPhaseProperty.PARTICLE, EpicFightParticles.HIT_BLUNT)
 				.newPropertyLine()
-				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(50.0F))
+				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(0.0F))
 				.addProperty(AttackPhaseProperty.MAX_STRIKES, ValueCorrector.adder(2))
 				.addProperty(AttackPhaseProperty.DAMAGE, ValueCorrector.multiplier(1.7F))
 				.addProperty(AttackPhaseProperty.SWING_SOUND, EpicFightSounds.WHOOSH_SHARP)
@@ -222,7 +222,7 @@ public class Skills {
 				.newPropertyLine()
 				.addProperty(AttackPhaseProperty.MAX_STRIKES, ValueCorrector.setter(1))
 				.addProperty(AttackPhaseProperty.EXTRA_DAMAGE, ExtraDamageType.get(ExtraDamageType.PERCENT_OF_TARGET_LOST_HEALTH, 0.03F))
-				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(50.0F))
+				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(0.0F))
 				.addProperty(AttackPhaseProperty.STUN_TYPE, StunType.LONG)
 				.registerPropertiesToAnimation());
 		
@@ -231,7 +231,7 @@ public class Skills {
 				.addProperty(AttackPhaseProperty.MAX_STRIKES, ValueCorrector.setter(1))
 				.newPropertyLine()
 				.addProperty(AttackPhaseProperty.DAMAGE, ValueCorrector.multiplier(2.5F))
-				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(20.0F))
+				.addProperty(AttackPhaseProperty.ARMOR_NEGATION, ValueCorrector.adder(0.0F))
 				.addProperty(AttackPhaseProperty.MAX_STRIKES, ValueCorrector.setter(1))
 				.addProperty(AttackPhaseProperty.STUN_TYPE, StunType.HOLD)
 				.addProperty(AttackPhaseProperty.HIT_SOUND, EpicFightSounds.BLADE_RUSH_FINISHER)

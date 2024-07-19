@@ -3,7 +3,7 @@
 	{
 		"one_hand":
 		{
-			"armor_negation":16.0,
+			"armor_negation":0.0,
 			"impact":2.6,
 			"max_strikes":1
 		},
